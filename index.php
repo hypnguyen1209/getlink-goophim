@@ -17,6 +17,7 @@ preg_match_all('#">eval(.+?)</script>#', $data, $arrayJS);
 $eval = 'eval'.$arrayJS[1][0];
 $unpack = new JavaScriptUnpacker();
 $reponse = $unpack->Unpack($eval);
+echo $reponse;
 
 
 
